@@ -34,7 +34,7 @@ Java_com_example_jnidemo_MainActivity_sumOfArrayFromJNI(JNIEnv *env, jobject thi
     for (int i = 0; i < size; ++i) {
         res += arr[i];
     }
-    env->ReleaseIntArrayElements(int_array,arr,NULL);
-    __android_log_write(ANDROID_LOG_DEBUG,"LOG_FROM_JNI_FUNCTION","Sum Of Array");
+    env->ReleaseIntArrayElements(int_array, arr, NULL);
+    __android_log_write(ANDROID_LOG_DEBUG, "LOG_FROM_JNI_FUNCTION", "Sum Of Array");
     return res;
 }
