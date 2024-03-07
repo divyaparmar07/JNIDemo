@@ -32,22 +32,50 @@
         android:id="@+id/buttonSubmitAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="29dp"
+        android:layout_marginTop="20dp"
         android:text="Add"
-        app:layout_constraintBottom_toTopOf="@+id/textViewAnswer"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/buttonSumOfArray"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
 
     <TextView
         android:id="@+id/textViewAnswer"
-        android:layout_width="393dp"
+        android:layout_width="398dp"
+        android:layout_height="180dp"
         android:textAlignment="center"
-        android:layout_height="0dp"
-        android:layout_marginBottom="396dp"
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSubmitSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="20dp"
+        android:text="Sub"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumber2" />
+
+    <Button
+        android:id="@+id/buttonSumOfArray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="28dp"
+        android:text="Sum Of Array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmitAdd" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="73dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmitSub" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
